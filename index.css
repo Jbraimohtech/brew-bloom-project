@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+header {
+    padding-top: 20px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.logo {
+    float: left;
+    padding-left: 50px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+header span {
+    color: #9d6538;
+    background-color: #dabe99;
+}
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+}
+
+nav ul li {
+    float: left;
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: #9d6538;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.our-story p {
+    font-style: italic;
+}
+.our-story, footer {
+    background-color: #9d6538;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.price {
+    cursor: pointer;
+}
+
+.price:hover {
+    color: #9d6538;
+}
+
+
+.menu {
+    display: grid;
+    grid-gap: 90px;
+    grid-template-areas: 
+    "ourMenu ourMenu ourMenu"
+    "espresso doppio shortMacchiato"
+    "longMacchiato latte mezzo"
+    "otherCoffee otherCoffee otherCoffee";
+}
+
+.ourMenu {
+    grid-area: ourMenu;
+    text-align: center;
+}
+
+.espresso {
+    grid-area: espresso;
+    text-align: justify;
+    width: 400px;
+    height: 280px;
+}
+
+.espresso:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+.doppio {
+    grid-area: doppio;
+    text-align: justify;
+    width: 400px;
+    height: 280px;
+}
+
+.doppio:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+
+.shortMacchiato {
+    grid-area: shortMacchiato;
+    text-align: justify;
+    width: 400px;
+    height: 280px;
+}
+
+.shortMacchiato:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+
+.longMacchiato {
+    grid-area: longMacchiato;
+    text-align: justify;
+    width: 400px;
+    height: 280px;
+}
+
+.longMacchiato:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+.latte {
+    grid-area: latte;
+    text-align: justify;
+    width: 400px;
+    height: 280px;
+}
+
+.latte:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+.mezzo {
+    grid-area: mezzo;
+    text-align: justify;
+    width: 400px;
+    height: 280px;
+}
+
+.mezzo:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+.otherCoffee {
+    grid-area: otherCoffee;
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 280px;
+}
+
+.otherCoffee:hover {
+    box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 550px;
+    width: 370px;
+    height: fit-content;
+}
+
+
+.theFoot {
+    display: grid;
+    grid-gap: 150px;  
+    grid-template-areas:
+    "ourOffice usefulLink newsletter"
+    "ourOffice usefulLink newsletter"
+    "ourOffice usefulLink newsletter"
+    "downDown downDown downDown";   
+}
+
+.theFoot a {
+    text-decoration: none;
+    color: white;
+}
+
+.ourOffice {
+    grid-area: ourOffice;
+    text-align: justify;
+    width: 300px;
+    height: fit-content;
+}
+
+.usefulLink {
+    grid-area: usefulLink;
+    text-align: justify;
+    width: 400px;
+    height: fit-content;
+}
+
+.usefulLink li{
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+.newsletter {
+    grid-area: newsletter;
+    text-align: justify;
+    width: 500px;
+    height: fit-content;
+}
+
+.downDown {
+    grid-area: downDown;
+}
+
+.forInput {
+    border-bottom: 0.5px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.forInput a {
+    margin-left: 50px;
+}
+
+.newsletter input {
+    margin-right: 50px;
+    background-color: #9d6538;
+    border: none;
+    padding-bottom: 10px;
+}
+
+.newsletter input::placeholder {
+    
+    font-size: smaller;
+    color: white;
+}
+
+
+img {
+    width: 400px;
+    height: 280px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 2), 0 6px 20px 0 rgb(0, 0, 0, 19);
+    border-radius: 20px;
+}
+
+.gallery {
+   padding: 50px;
+   display: grid;
+   grid-gap: 90px;
+   grid-template-areas: 
+   "espressoImage doppioImage shortMacchiatoImage"
+   "longMacchiatoImage latteImage mezzoImage"
+   "ristrettoImage flatWhiteImage longBlackImage";
+}
+
+.espressoImage {
+    grid-area: espressoImage;
+    text-align: center;
+}
+
+.doppioImage {
+    grid-area: doppioImage;
+    text-align: center;
+}
+
+.shortMacchiatoImage {
+    grid-area: shortMacchiatoImage;
+    text-align: center;
+}
+
+.longMacchiatoImage {
+    grid-area: longMacchiatoImage;
+    text-align: center;
+}
+
+.latteImage {
+    grid-area: latteImage;
+    text-align: center;
+}
+
+.mezzoImage {
+    grid-area: mezzoImage;
+    text-align: center;
+}
+
+.ristrettoImage {
+    grid-area: ristrettoImage;
+    text-align: center;
+}
+
+.flatWhiteImage {
+    grid-area: flatWhiteImage;
+    text-align: center;
+}
+
+.longBlackImage {
+    grid-area: longBlackImage;
+    text-align: center;
+}
+
+
+
+.externalIcons i {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.downLogo  {
+    float: left;
+    cursor: pointer;
+}
+
+.downLogo span {
+    color: #9d6538;
+    background-color: #dabe99;
+}
+
+.copyW {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.copyW ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.copyW li {
+    float: left;
+    padding: 10px;
+}
